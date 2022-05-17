@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+html,body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.ph1 {
+  color: lightpink;
+  margin: 0;
+}
+
+.phead {
+  color: skyblue;
+  margin: 0;
+}
+
+html {
+/* background: url("https://media.istockphoto.com/vectors/background-with-handdrawn-food-seamless-vector-id481275729"); */
+background-size: cover;
+background-repeat:no-repeat;
+background-color: #f2f2f2;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: lightyellow;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#navbar a:hover {
+  background-color: lightpink;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: lightpink;
+  color: black;
+}
+
+#navbar a.color {
+  color: green;
+}
+
+.about {
+  white-space: pre;
+}
+
+div.border {
+  margin-left: 150px;
+  border: 4px solid pink;
+  float: left;
+  width: 300px;
+  background-color: white;
+}
+
+div.border:hover {
+  border: 4px solid skyblue;
+  background:
+}
+
+div.border img {
+  width: 100%;
+  height: 350;
+}
+
+div.disc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #990099;
+  cursor: pointer;
+  background-color: skyblue;
+  border-radius: 15px;
+  font-size: 17px;
+  font-family: 'Koulen', cursive;
+  text-align: center;
+  border-color: #f2f2f2;
+}
+
+.btn:hover {
+  background-color: #66b3ff;
+  border-color: gray;
+}
+
+.sticky2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.menutxt {
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+
+.buy {
+  margin-bottom: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #c61aff;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 30px;
+  font-family: 'Koulen', cursive;
+  text-align: center;
+  border: 2px solid #c61aff;
+  transition: 1.5s;
+}
+
+.buy:hover {
+  box-shadow: 0px 2px 10px #c61aff inset, 0px 2px 10px #c61aff;
+  text-shadow: 0 0 2px #c61aff;
+  background-color: #ffb3ec;
+}
+
+.button {
+  padding-left: 680px;
+}
