@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  <title>Fast Food Frenzy</title>
+			<link rel="icon" href="https://i.pinimg.com/280x280_RS/65/3c/2d/653c2d6533c7a9ad457117db8cf819d2.jpg">
+			<link rel="stylesheet" href="main2.css">
+	</head>
+	<style>
+	.header {
+		font-size: 50px;
+		text-align: center;
+		background-color: #999999;
+		background-blend-mode: multiply;
+		background-image: url(https://www.diyetasistan.com/files/user_uploads/Hande6/bagisiklik-sistemini-zayiflatan-yiyecekler_6.jpg);
+		background-size: cover;
+		font-family: 'Lobster', cursive;
+	}
+
+	html {
+    background: url("https://videohive.img.customer.envatousercontent.com/files/b73b1f0c-062c-41dc-a6be-dc8778c82eed/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=2a9a3846083554d13618d5d5e7fbc5a4");
+	</style>
+
+	<body>
+		<div class="sticky2">
+			<div class="header">
+				<h1 class="ph1">Fast Food Frenzy</h1>
+				<p  class='phead'>Quick food</p>
+			</div>
+			<div class="menutxt" id="navbar">
+				<a href="index.html">Home</a>
+				<a href="#">New</a>
+				<a href="overview.html">Contact</a>
+			</div>
+		</div>
+			<div class="border">
+				<div>
+						<img height="230" width="300" src="https://www.bloggang.com/data/m/mookeiei/picture/1505034330.png" alt="Food">
+				</div>
+					<div class="disc">
+						<ul>
+							<li>Hamberger</li>
+
+							<li><select id="price">
+								<option selected value="3">3$ - Size Small</option>
+								<option value="4">4$ - Size Medium</option>
+								<option value="5">5$ - Size Big</option>
+									</select></li>
+
+							<li><input value="1" type="number" placeholder="Amount" id="amount"></li>
+						</ul>
+						<span>Total price: $<span id="total"></span></span>
+						<div>
+							<a href="#">
+											 <button class="btn" onclick="getprice()" type="button">Submit</button>
+							</a>
+						</div>
+					</div>
+			</div>
+
+  			<div class="border">
+					<a>
+						<img height="230" width="300" src="https://d1uhbq1za6lcid.cloudfront.net/19otw8kzkvhuug_French-fries-new-19.jpg" alt="Food">
+					</a>
+	 				<div class="disc">
+						<ul>
+							<li>French fries</li>
+
+							<li><select id="price1">
+								<option selected value="1">1$ - Size Small</option>
+								<option value="2">2$ - Size Medium</option>
+								<option value="5">5$ - Size Big</option>
+								</select></li>
+
+							<li><input value="1" type="number" placeholder="Amount" id="amount1"></li>
+								</ul>
+								<span>Total price: $<span id="total1"></span></span>
+								<div>
+													 <button class="btn" onclick="getprice1()" type="button">Submit</button>
+								</div>
+					</div>
+				</div>
+
+					<div class="border">
+						<div>
+						<a>
+							<img height="230" width="300" src="https://www.greenqueen.com.hk/wp-content/uploads/2020/02/wuhan-noodles-sohu.jpeg" alt="Food">
+						</a>
+						<div class="disc">
+							<ul>
+								<li>Noodle</li>
+
+								<li><select id="price2">
+									<option selected value="3">3$ - Size Small</option>
+									<option value="6">6$ - Size Medium</option>
+									<option value="7">7$ - Size Big</option>
+										</select></li>
+
+								<li><input value="1" type="number" placeholder="Amount" id="amount2"></li>
+							</ul>
+							<span>Total price: $<span id="total2"></span></span>
+							<div>
+									 <button class="btn" onclick="getprice2()" type="button">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="button">
+					<a href="ship.html">
+					<button class="buy" type="button">Next Page</button>
+					</a>
+				</div>
+
+			<script>
+				function getprice() {
+					var quantity = document.getElementById('amount').value;
+					var price = document.getElementById("price").value;
+					var final = price*quantity
+					document.getElementById('total').innerHTML = final;
+					}
+
+				function getprice1() {
+					var quantity = document.getElementById('amount1').value;
+					var price = document.getElementById("price1").value;
+					var final = price*quantity
+					document.getElementById('total1').innerHTML = final;
+					}
+
+				function getprice2() {
+					var quantity = document.getElementById('amount2').value;
+					var price = document.getElementById("price2").value;
+					var final = price*quantity
+					document.getElementById('total2').innerHTML = final;
+					}
+			</script>
+	</body>
+</html>

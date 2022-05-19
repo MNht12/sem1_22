@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  <title>Uncle Long Refresher</title>
+			<link rel="icon" href="https://i.pinimg.com/280x280_RS/65/3c/2d/653c2d6533c7a9ad457117db8cf819d2.jpg">
+			<link rel="stylesheet" href="main2.css">
+	</head>
+
+
+	<style>
+	.header {
+		font-size: 50px;
+		text-align: center;
+		background-color: #999999;
+		background-blend-mode: multiply;
+		background-image: url(https://mmqueue.com/Data/UploadFile/Cover%20photo_2.jpg);
+		background-size: cover;
+		font-family: 'Lobster', cursive;
+	}
+
+	html {
+    background: url("https://thumbs.dreamstime.com/b/food-seamless-pattern-hand-drawn-vegetables-fish-meat-products-spices-dessert-black-background-can-be-used-to-decorate-cafe-141221456.jpg");
+  }
+	</style>
+	<body>
+			<div class="sticky2">
+				<div class="header">
+					<h1 class="ph1">Uncle Long Refresher</h1>
+					<p  class='phead'>Western food</p>
+				</div>
+				<div class="menutxt" id="navbar">
+					<a href="index.html">Home</a>
+					<a href="#">New</a>
+					<a href="overview.html">Contact</a>
+				</div>
+			</div>
+
+			<div class="border">
+				<div>
+					<a>
+						<img height="230" width="300" src="https://www.thespruceeats.com/thmb/Dl17tGMnzmCH83Z0pQTS4HxKRyY=/566x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chateaubriand-recipe-1375530-hero-01-1803de3eebc0401fa6406693f32e9e8f.jpg" alt="Food">
+					</a>
+				</div>
+					<div class="disc">
+						<ul>
+							<li>Steak</li>
+
+							<li class="li"><select id="price">
+								<option selected value="5">5$ - Size Small</option>
+								<option value="6">6$ - Size Medium</option>
+								<option value="7">7$ - Size Big</option>
+									</select></li>
+
+							<li class="li"><input value="1" type="number" placeholder="Amount" id="amount"></li>
+						</ul>
+						<span>Total price: $<span id="total"></span></span>
+						<div>
+							<a href="#">
+											 <button class="btn" onclick="getprice()" type="button">Submit</button>
+							</a>
+						</div>
+					</div>
+			</div>
+
+  			<div class="border">
+					<a>
+						<img height="230" width="300" src="https://i.pinimg.com/474x/5d/0d/a5/5d0da57d76d784bd513f138483f9fdf4--eid-recipes-snack-recipes.jpg" alt="Food">
+					</a>
+	 				<div class="disc">
+						<ul>
+							<li>Pizza</li>
+
+							<li><select id="price1">
+								<option selected value="6">6$ - Size Small</option>
+								<option value="8">8$ - Size Medium</option>
+								<option value="10">10$ - Size Big</option>
+								</select></li>
+
+							<li><input value="1" type="number" placeholder="Amount" id="amount1"></li>
+								</ul>
+								<span>Total price: $<span id="total1"></span></span>
+								<div>
+									<a href="#">
+													 <button class="btn" onclick="getprice1()" type="button">Submit</button>
+									</a>
+								</div>
+					</div>
+				</div>
+
+					<div class="border">
+						<div>
+						<a>
+							<img height="230" width="300" src="https://i0.wp.com/blog.kamereo.vn/wp-content/uploads/2019/06/burrito-e1561382263846.jpg?fit=752%2C502&ssl=1" alt="Food">
+						</a>
+						<div class="disc">
+							<ul>
+								<li>Burrito</li>
+
+								<li><select id="price2">
+									<option selected value="4">4$ - Size Small</option>
+									<option value="6">6$ - Size Medium</option>
+									<option value="7">7$ - Size Big</option>
+										</select></li>
+
+								<li><input value="1" type="number" placeholder="Amount" id="amount2"></li>
+							</ul>
+							<span>Total price: $<span id="total2"></span></span>
+							<div>
+								<a href="#">
+									 <button class="btn" onclick="getprice2()" type="button">Submit</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="button">
+					<a href="ship.html">
+					<button class="buy" type="button">Next Page</button>
+					</a>
+				</div>
+
+			<script>
+				function getprice() {
+					var quantity = document.getElementById('amount').value;
+					var price = document.getElementById("price").value;
+					var final = price*quantity
+					document.getElementById('total').innerHTML = final;
+					}
+
+				function getprice1() {
+					var quantity = document.getElementById('amount1').value;
+					var price = document.getElementById("price1").value;
+					var final = price*quantity
+					document.getElementById('total1').innerHTML = final;
+					}
+
+				function getprice2() {
+					var quantity = document.getElementById('amount2').value;
+					var price = document.getElementById("price2").value;
+					var final = price*quantity
+					document.getElementById('total2').innerHTML = final;
+					}
+			</script>
+
+			</div>
+	</body>
+</html>
